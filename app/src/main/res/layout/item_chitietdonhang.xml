@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/item_imgchitiet"
+                    android:src="@drawable/ic_media_24"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/item_imgchitiet"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/item_tenspchitiet"
+                        android:text="Lap top"
+                        android:layout_marginTop="3dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/item_soluongchitiet"
+                        android:text="so luong"
+                        android:layout_marginTop="3dp"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/item_giachitiet"
+                        android:text="gia"
+                        android:layout_marginTop="3dp"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/thongbaodanhgia"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="42dp"
+                    android:src="@drawable/ava"
+                    android:layout_height="42dp">
+                </ImageView>
+                <TextView
+                    android:textSize="18sp"
+                    android:text="Bạn chỉ có thể đánh giá đơn hàng khi trạng thái đơn hàng đã giao thành công!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/laydanhgia"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:id="@+id/rating_bar"
+                    style="@android:style/Widget.Holo.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:progressTint="#FFC106"
+                    android:rating="0"
+                    android:stepSize="1" />
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/danhgia"
+                            android:hint="Đánh giá của bạn về sản phẩm: "
+                            android:inputType="text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:id="@+id/btn_send"
+                        android:layout_gravity="center"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="5dp"
+                        android:visibility="visible"
+                        android:contentDescription="@string/description_image"
+                        app:srcCompat="@drawable/ic_send_24"
+                        app:tint="@color/red" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:id="@+id/btn_edit"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="5dp"
+                        android:contentDescription="@string/description_image"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/baseline_edit_24"
+                        app:tint="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

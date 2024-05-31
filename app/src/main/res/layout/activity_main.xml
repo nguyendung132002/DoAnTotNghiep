@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="activity.MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                app:titleTextColor="@color/color_back_ground"
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xin chào: "
+                        android:textStyle="bold"
+                        android:textColor="@color/color_back_ground">
+
+                    </TextView>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/username"
+                        android:textSize="16dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_name"
+                        android:textColor="@color/color_back_ground">
+                    </TextView>
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/image_live"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_live_tv_24"
+                        app:tint="@color/color_back_ground" />
+                    <ImageView
+                        android:id="@+id/image_mess"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_message_24"
+                        app:tint="@color/color_back_ground" />
+                    <ImageView
+                        android:id="@+id/imglogin"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_logout_24"
+                        app:tint="@color/color_back_ground"/>
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_setting"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/description_image"
+                    app:srcCompat="@drawable/ic_settings_24" />
+                <LinearLayout
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/grey_background"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextText"
+                        android:layout_width="217dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:autofillHints=""
+                        android:background="@color/grey"
+                        android:ems="10"
+                        android:hint="@string/search_food"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="16sp"
+                        tools:ignore="NestedWeights,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+                    <ImageView
+                        android:id="@+id/btn_search"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="4dp"
+                        android:contentDescription="@string/description_image"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/ic_search_24" />
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_marginStart="6dp"
+                    android:id="@+id/frametc"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="?attr/actionBarSize">
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/menu_sl"
+                        android:layout_gravity="top|right"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"/>
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/shopping_cart_24"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"></ImageView>
+                </FrameLayout>
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:elevation="5dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                        <com.denzcoskun.imageslider.ImageSlider
+                            android:id="@+id/image_slider"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            app:iss_auto_cycle="true"
+                            app:iss_delay="2500"
+                            app:iss_period="1000"
+                            app:iss_text_align="CENTER" />
+                    </androidx.cardview.widget.CardView>
+<!--                    <ViewFlipper-->
+<!--                        android:id="@+id/viewlipper"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="200dp">-->
+<!--                    </ViewFlipper>-->
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/an"
+                        android:background="@color/grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+                        <LinearLayout
+                            android:background="@color/white"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                            <ImageView
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/ava"
+                                android:layout_gravity="center"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp">
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/tex"
+                                android:layout_gravity="center"
+                                android:layout_width="300dp"
+                                android:layout_height="38dp"
+                                android:background="@color/white"
+                                android:layout_marginLeft="10dp"
+                                android:text="Cảm ơn bạn đã tin tưởng và mua hàng tại ứng dụng DungShop"
+                                android:textColor="#131313">
+                            </TextView>
+                            <ImageView
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/back"
+                                android:src="@drawable/ic_close_24"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp">
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_dm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Danh mục sản phẩm"
+                        android:textColor="#131313"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:background="@color/grey"
+                        android:id="@+id/recycleview_danhmucsanpham"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/san_pham_moi_nhat"
+                            android:textColor="#131313"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:elevation="3dp"
+                                android:id="@+id/all"
+                                android:layout_gravity="center"
+                                android:background="@color/grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:padding="5dp"
+                                android:text="Tất cả sản phẩm"
+                                android:textColor="@android:color/holo_red_light"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycleview_moi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Sản phẩm bán nhiều nhất"
+                        android:textColor="#131313"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:background="@color/grey"
+                        android:id="@+id/recycleview"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="VisualLintBounds">
+            <ListView
+                android:id="@+id/listviewmanhinhchinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+    <LinearLayout
+        android:id="@+id/lay_ai"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/chatai"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/chat"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ChatAI"></TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="center"
+            android:id="@+id/itemgh_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_media_24"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/itemgh_tensp"
+            android:text="Ten san pham"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+         <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/itemgh_gia"
+                android:layout_marginLeft="20dp"
+                android:text="gia: 32.000.000"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+             <TextView
+                 android:layout_marginTop="5dp"
+                 android:id="@+id/sltk"
+                 android:layout_marginLeft="20dp"
+                 android:text="sltk"
+                 android:textSize="16dp"
+                 android:layout_marginBottom="5dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+         </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="16"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="2.5"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/itemgh_tru"
+                android:src="@drawable/ic_remove_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="2.5"
+                android:text="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/itemgh_sluong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/itemgh_cong"
+                android:layout_weight="2.5"
+                android:src="@drawable/ic_add_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="2.5"
+                android:src="@drawable/ic_bang_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="25.000.000"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/itemgh_giasp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/item_giohang_check"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                <!--            <Button-->
+
+<!--                android:text="Xoá sản phẩm"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

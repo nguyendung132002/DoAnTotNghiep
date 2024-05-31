@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LienHeMainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toobar_lh"
+            app:title="Thông Tin Liện Hệ"
+            android:background="#95E4BF"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:tint="@color/red"
+                android:src="@drawable/ic_email_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:text="Email liên hệ: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_gravity="center"
+                android:text="nguyenvandung132002@gmail.com"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:tint="@color/red"
+                android:src="@drawable/ic_phone_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </ImageView>
+            <TextView
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Điện thoại liên hệ: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_gravity="center"
+                android:text="0965661311"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                app:tint="@color/red"
+                android:src="@drawable/ic_add_location_24"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </ImageView>
+            <TextView
+                android:textColor="@color/red"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Địa chỉ: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="Số 30, Đường A3,Khu đô thị Nam Đầm Vạc, Vĩnh Yên"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+
+        <fragment
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

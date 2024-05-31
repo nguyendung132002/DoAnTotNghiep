@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuangCaoActivity">
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toobar_ct"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#EDC17F"
+                app:title="Chi Tiết Quảng Cáo">
+            </androidx.appcompat.widget.Toolbar>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/thongtin"
+                        android:textStyle="bold"
+                        android:text="thong tin"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/dark_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        android:text="Nơi áp dụng:"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:text="  Cửa hàng Dũng Shop."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@color/dark_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="18sp"
+                        android:text="Dũng Shop thông báo:"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/thongtina"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:text="  Tin vui cho các tín đồ mua sắm đồ điện tử! Cửa hàng Dũng Shop chính thức khai trương, hứa hẹn mang đền trải nghiệm mua sắm trên cả tuyệt vời!"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <androidx.cardview.widget.CardView
+                        android:elevation="5dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                        <ImageView
+                            android:id="@+id/quangcao"
+                            android:src="@drawable/ic_camera_alt_24"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"/>
+                    </androidx.cardview.widget.CardView>
+                    <!--            <TextView-->
+                    <!--                android:layout_marginTop="10dp"-->
+                    <!--                android:layout_marginLeft="10dp"-->
+                    <!--                android:layout_marginBottom="10dp"-->
+                    <!--                android:id="@+id/thongtinb"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content">-->
+                    <!--            </TextView>-->
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/dark_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp">
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="16sp"
+                        android:text="  Trải nghiệm mua sắm tại Dũng Shop.\n  Quý khách vui lòng liên hệ Dịch vụ Khách hàng nếu cần hỗ trợ thêm:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            app:tint="@android:color/holo_red_light"
+                            android:src="@drawable/ic_phone_24"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Hotline Chăm sóc khách hàng: 0965661311
+Hotline Mua hàng: 0965661311"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_phone_24"
+                            android:layout_width="30dp"
+                            app:tint="@android:color/holo_red_light"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="30dp"/>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Hotline Chăm sóc khách hàng: 0965661311
+Hotline Mua hàng: 0965661311"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

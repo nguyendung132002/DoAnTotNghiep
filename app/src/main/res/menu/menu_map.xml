@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mapNormal"
+        android:title="Bản đồ mặc định"></item>
+    <item android:id="@+id/mapHybrid"
+        android:title="Bản đồ lai"></item>
+    <item android:id="@+id/mapSatellite"
+        android:title="Bản đồ vệ tinh"></item>
+    <item android:id="@+id/mapTerarin"
+        android:title="Bản đồ địa hình"></item>
+    <item android:id="@+id/mapNone"
+        android:title="Không"></item>
+</menu>
